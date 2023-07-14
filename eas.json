@@ -1,0 +1,48 @@
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "releaseChannel": "prod1",
+      "ios": {
+        "enterpriseProvisioning": "universal"
+      }
+    },
+    "development": {
+      "android": {
+        "buildType": "apk"
+      },
+      "releaseChannel": "development",
+      "ios": {
+        "enterpriseProvisioning": "universal"
+      }
+    },
+    "stage": {
+      "android": {
+        "buildType": "apk"
+      },
+      "releaseChannel": "stage",
+      "ios": {
+        "enterpriseProvisioning": "universal"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {},
+      "ios": {
+      }
+    },
+    "development": {
+      "android": {},
+      "ios": {
+      }
+    }
+  },
+  "cli": {
+    "version": ">= 0.36.1",
+    "requireCommit": true
+  }
+}
+

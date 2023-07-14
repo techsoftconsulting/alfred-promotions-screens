@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@main-components/*": [
+        "./src/modules/_shared/ui/components/*"
+      ],
+      "@utils/*": [
+        "./src/modules/_shared/domain/utils/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@navigation/*": [
+        "./src/navigation/*"
+      ],
+      "@api": [
+        "./src/api/index"
+      ],
+      "@images/*": [
+        "./src/utils/constants/images*"
+      ],
+      "@shared/*": [
+        "./src/modules/_shared/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}
