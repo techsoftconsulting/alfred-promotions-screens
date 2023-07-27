@@ -41,6 +41,7 @@ export function Modal(props: ModalProps) {
                         ...props.containerStyle ?? {},
                         content: {
                             ...customStyles.content,
+                            // position: 'relative',
                             backgroundColor: 'white',
                             padding: theme.spacing.l,
                             borderRadius: theme.borderRadius.m,

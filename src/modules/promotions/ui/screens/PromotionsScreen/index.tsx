@@ -48,7 +48,6 @@ export default function PromotionsScreen() {
                         bg={'white'}
                         justifyContent={'center'}
                 >
-
                     <PromotionsList
                             loading={loading}
                             items={items ?? []}
@@ -213,20 +212,26 @@ function PromotionDetailsModal(props: Partial<ModalProps> & { itemId: string }) 
             <Modal
                     containerStyle={{}}
                     contentContainerStyle={{
+                        height: '100%',
                         boxShadow: 'none',
-                        backgroundColor: 'white',
-                        top: `calc(50% - ${MODAL_HEIGHT / 2}px)`,
-                        maxWidth: 'calc(80%)'
+                        backgroundColor: 'transparent',
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'center'
                     }}
                     visible={props.visible}
                     onDismiss={props.onDismiss}
             >
                 <Box
-                        height={MODAL_HEIGHT}
+                        borderRadius={theme.borderRadius.m}
+                        padding={'l'}
+                        width={'80%'}
+                        backgroundColor={'white'}
+                        /* height={MODAL_HEIGHT}*/
                         flexDirection={'row'}
                 >
                     {
-                        isLoading ? (
+                        loading ? (
                                 <Box
                                         justifyContent={'center'}
                                         alignItems={'center'}
